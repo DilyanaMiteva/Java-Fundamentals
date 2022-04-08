@@ -1,2 +1,2 @@
 # Java-Fundamentals
-Homeworks SoftUni
+Homeworks-SoftUni
