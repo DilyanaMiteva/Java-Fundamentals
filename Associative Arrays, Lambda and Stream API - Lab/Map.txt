@@ -1,0 +1,58 @@
+!!!!!!
+Integer currentNumber = number.get("5");
+if(currentNumber == null) {
+	currentNumber = 0;    !!!!
+}
+
+putIfAbsent(k, v)     !!!!!!!!!
+Ako e prazno => value = 0    !!!!!!
+
+
+
+HashMap<K, V>                          bez red 
+Ключовете са уникални
+Използва hash-таблица + списък
+Linkedhashmap<K, V>                    po reda na dobavqne
+Ключовете са уникални
+Запазва ключовете в ред за добавяне
+TreeMap<K, V>                          podredeni po kriterii/ azbuchen red / ot 1 do 9
+Ключовете са уникални
+Запазва ключовете си винаги сортирани
+Използва дърво за балансирано търсене
+
+put(key, value) 
+airplanes.put("Boeing 737", 130);
+airplanes.put("Airbus A320", 150);
+
+get(key)
+dai mi ... key/value
+
+remove(key) 
+HashMap<String, Integer> airplanes = new HashMap<>();
+airplanes.put("Boeing 737", 130);
+airplanes.remove("Boeing 737");
+
+containsKey(key)
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Airbus A320", 150);
+if (map.containsKey("Airbus A320"))
+   System.out.println("Airbus A320 key exists");
+
+containsValue(value) ---- BAVNO
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Airbus A320", 150);
+System.out.println(map.containsValue(150)); //true
+System.out.println(map.containsValue(100)); //false
+
+Map.Entry<K, V>
+Map<String, Double> fruits = new LinkedHashMap<>();
+fruits.put("banana", 2.20);
+fruits.put("kiwi", 4.50);
+for (Map.Entry<K, V> entry : fruits.entrySet()) {
+System.out.printf("%s -> %.2f%n", entry.getKey(), entry.getValue());
+}
+
+infected.value() -> ibhodi mi vsichki stoinosti
+infected.keySet() -> ibhodi mi vsichki kliuchove
+
+

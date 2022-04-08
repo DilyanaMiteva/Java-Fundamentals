@@ -1,0 +1,60 @@
+min() - finds the smallest element in a collection: 
+int min = Arrays.stream(new int[]{15, 25, 35}).min().getAsInt();
+
+max() - finds the largest element in a collection:
+int max = Arrays.stream(new int[]{15, 25, 35}).max().getAsInt();
+
+sum() - finds the sum of all elements in a collection:
+int sum = Arrays.stream(new int[]{15, 25, 35}).sum();
+
+average() - finds the average of all elements:
+double avg = Arrays.stream(new int[]{15, 25, 35}).average().getAsDouble();
+
+min()
+int min = nums.stream().mapToInt(Integer::intValue).min().getAsInt();
+int min = nums.stream().min(Integer::compareTo).get();
+
+max()
+int max = nums.stream().mapToInt(Integer::intValue)
+              .max().getAsInt();
+int max = nums.stream()
+              .max(Integer::compareTo).get();
+
+sum()
+int sum = nums.stream()
+              .mapToInt(Integer::intValue).sum();
+
+average()
+double avg = nums.stream()
+                 .mapToInt(Integer::intValue)
+                 .average()
+                 .getAsDouble();
+
+map() 
+int[] nums = Arrays.stream(sc.nextLine().split(" "))
+          .mapToInt(e -> Integer.parseInt(e))
+          .toArray(); 
+
+toArray()
+int[] nums = Arrays.stream(sc.nextLine().split(" "))
+                   .mapToInt(e -> Integer.parseInt(e))
+                   .toArray();
+
+toList() 
+List<Integer> nums = Arrays.stream(sc.nextLine()
+                        .split(" "))
+                        .map(e -> Integer.parseInt(e))
+                        .collect(Collectors.toList());
+
+filter()
+int[] nums = Arrays.stream(sc.nextLine().split(" "))
+                 .mapToInt(e -> Integer.parseInt(e))
+                 .filter(n -> n > 0)
+                 .toArray();
+
+sorted() 
+nums = nums.stream()
+           .sorted((n1, n2) -> n1.compareTo(n2))
+           .collect(Collectors.toList());
+
+
