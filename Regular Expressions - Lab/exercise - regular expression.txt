@@ -1,0 +1,34 @@
+[njv] -> само n,j,v
+[^abc] -> без a,b,c
+[0-9] -> ot 0 do 9
+[a-z] -> ot a do z
+\w -> vsichki simvoli -> a-z, A-Z, 0-9, _ 
+\W -> obratnoto na \w
+\s -> wsichki white speisove
+\S -> obratnoto na \s
+\d -> cifrite ot 0 do 9
+\D obratnoto na \d
+* -> 0 ili poveche
++ -> 1 ili poveche
+? -> 0 ili 1 put
+{3} -> machvame 3 puti
+{1, 3} -> ot 1 do 3 puti
+(celiq regex) -> grupa
+(?:Hi|hello) -> ili Hi ili hello ,za da bude machnato
+^ -> nachano na regex
+$ -> krai na regex
+\b .... \b -> nachalo i kraj na duma
+(?<name>regex) -> ime na grupata
+<(\w+)[^>]*>.*?<\/\1> -> neshtoto,koeto se machne v 
+nacaloto da e sushtoto kato v ktaq
+
+String text = "..."
+String regex = "..."
+Pattern pattern = Pattern.compile(regex);
+Matcher matcher = pattern.matcher(text);
+sout(matcher.find());
+sout(matcher.group());
+sout(matcher.group(0 | 5 | "number"));
+
+replaceAll(String replacement) -> zamestvame vsichki proqvleniq
+replaceFirst(String replacement) -> zamestvame purvoto proqvlenie

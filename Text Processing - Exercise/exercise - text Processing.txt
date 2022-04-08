@@ -1,0 +1,34 @@
+substring(int startIndex, int endIndex) - от старт индекс до енд индекс
+substring(int startIndex) - от старт индекс до края
+indexOf(...) - връща първия индекс, който съвпада с ... / връща пр.(2, 8, 10)
+	или -1(ако не се среща)
+
+lastIndex(,,,) - връща ПОСЛЕДНИЯ индекс, който съвпада с ,,, / връща пр.(2, 8, 10)
+	или -1(ако не се среща)
+
+indexOf(int index, int fromIndex) - какво търсим, от къде го търсим 
+пр.	int firstIndex = text.indexOf("o");
+	int secondIndex = text.indexOf("o", firstIndex + 1);
+	int thirdIndex = text.indexOf("o", secondIndex+ 1);
+
+пр. -!-	int currentIndex = text.indexOf("o");
+	while(currentIndex != -1){
+		sout(currentIndex);
+		currentIndex = text.indexOf("o", currentIndex + 1);
+	}
+
+contains() -> true/false
+Split:
+...text.split("[, .]+");
+replace(match, replacement) -> замества всички съвпадения
+
+StringBuilder asd = new StringBuilder();
+asd.append (добавяне)
+asd.length() 
+asd.setLength(0) -> премахва всички символи
+asd.charAt(int index) - дава символа на определена позиция
+asd.setCharAt(int index, char ch) - променя символа на определена позиция
+asd.insert(int index, String str) ->  на кой индекс, какво
+asd.replace(int startIndex, int endIndex, String str)
+asd.toString() - конвертира текущата стойност, с която правим нещо 
+със стринг билдър, в Стринг
